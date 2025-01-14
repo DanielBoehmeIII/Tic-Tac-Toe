@@ -161,6 +161,15 @@ const gameController = (() => {
 
 const restart = document.getElementById("restart");
 restart.addEventListener("click", () => {
+  xScore = 0;
+  oScore = 0;
+  player1Score.textContent = `Score: ${xScore}`;
+  player2Score.textContent = `Score: ${oScore}`;
+  gameController.restartGame();
+});
+
+const nextRound = document.getElementById("next-round");
+nextRound.addEventListener("click", () => {
   gameController.restartGame();
 });
 

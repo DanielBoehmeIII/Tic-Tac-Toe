@@ -271,22 +271,24 @@ input {
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.2);
 }
 
-#restart {
+.overlay-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+#restart,
+#next-round {
   background-color: rgb(23, 23, 23);
   color: white;
   border: none;
   padding: 8px 20px;
   font-size: 28px;
   letter-spacing: 10px;
-  font-fa%mily: "Honk", "Arial";
+  font-family: "Honk", "Arial";
   cursor: pointer;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.4);
-}
-
-#restart {
-  font-family: "Honk", "Arial";
-  font-size: 20px;
   animation: pulse 3s infinite ease-in-out;
 }
 
